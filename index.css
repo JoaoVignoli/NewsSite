@@ -1,0 +1,110 @@
+/* RESET global: zera margens/paddings e padroniza box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cor de fundo */
+html, body {
+    height: 100%;
+    background: #444040;
+}
+
+/* Barra do topo */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    padding: 0 24px;                
+    background: rgba(237, 238, 242, 0.85);
+    box-shadow: 0px 0px 15px 3px;
+}
+
+/* Menu de navegação */
+.navegation-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+}
+
+.navegation-menu nav {
+    display: flex;
+    gap: 25px;
+}
+
+/* Links SEM sublinhado */
+.navegation-menu a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+}
+
+/* Avatar + nome */
+.profile-info {
+    display: flex;
+    color: #000000;
+    align-items: center;
+    gap: 3px;
+    padding: 0 24px;
+}
+
+/* Avatar */
+.profile-image {
+    width: 35px;
+}
+
+.top-news {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 844px;
+}
+
+/* Cada card --------------------------------------------------*/
+.card-new {
+    position:relative;                  /* para posicionar título */
+    flex:1;                             /* altura divide igualmente */
+    overflow:hidden;                    /* esconde borda arredondada do img */
+    border-radius:15px;
+    margin: 10px;
+}
+
+/* A imagem ocupa todo o card sem distorcer */
+.card-new img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+/* Título sobre a imagem -------------------------------------*/
+.card-title {
+    position:absolute;
+    bottom:8px;
+    left:0px;
+    right:8px;
+    padding:20px 20px;
+    color:#fff;
+    font-weight:600;
+    border-radius:8px;
+    font-size: 18px;
+}
+
+.card-text {
+    position:absolute;
+    bottom:8px;
+    left:11px;
+    right:8px;
+    padding:6px 10px;
+    color:#fff;
+    font-weight:600;
+    border-radius:8px;
+    font-size: 13px;
+}
+
+.backgroud-text-card {
+    height: 20%;
+    background-color: #444040;
+}
